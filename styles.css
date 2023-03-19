@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
     margin: 0;
     padding: 0;
@@ -109,30 +113,6 @@ p {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: box-shadow 0.3s;
-}
-
-.project img:hover {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.project h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
 
 section {
     margin-bottom: 2rem;
@@ -216,10 +196,269 @@ footer {
 
 .skill-card,
 .project-card {
-  background-color: #f1f1f1;
+  background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 200px;
   text-align: center;
 }
+.skills-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skill-card {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .skill-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .skill-list li {
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  /* Augmenter la taille de la police du nom et prénom */
+h1 {
+    font-size: 2.5rem; /* ajustez la valeur selon votre préférence */
+    /* autres styles existants pour h1 */
+  }
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .stars {
+    display: flex;
+    margin-left: 0.5rem;
+    align-items: center;
+    margin-top: -11px; /* Ajouté pour décaler légèrement les étoiles vers le haut */
+  }
+  
+  .star {
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+  }
+  
+  .star.filled {
+    color: #1C1C1C;
+  }
+  
+  /* Styles pour la section des compétences */
+#skills {
+    background-color: #f5f5f5;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+
+  
+  h3 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #777;
+    margin-right: 4px;
+  }
+  
+  .star.filled {
+    color: #333;
+  }
+  .slide {
+    height: 100px;
+    width: 250px;
+    margin: 0 20px; /* Ajoutez une marge horizontale de 10px */
+  }
+  .slide-track {
+    animation: scroll 60s linear infinite; /* Augmentez la durée de l'animation, par exemple à 60 secondes */
+    display: flex;
+    width: calc(250px * 14);
+  }
+ 
+  .carrousel {
+    overflow: hidden;
+    
+    position: relative;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .carrousel-inner {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: flex;
+    animation: slide 45s infinite alternate linear;
+  }
+  
+  .carrousel-inner img {
+    display: inline-block;
+    margin-right: 50px;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .progress-bar {
+    background-color: #e0e0e0;
+    width: 70%;
+    height: 1.5rem;
+    position: relative;
+  }
+  
+  .progress {
+    background-color: #4caf50;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .skills-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem; /* Augmente la taille du texte des compétences */
+  }
+  
+  .progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    height: 20px;
+    width: 100%;
+  }
+  
+  .progress {
+    background-color: #00b0f0;
+    border-radius: 5px;
+    height: 100%;
+  }
+  
+  .carousel {
+    background-color: #333; /* Modifiez cette valeur pour changer la couleur de fond */
+  }
+  .custom-carousel-bg {
+    background-color: #333 !important;
+  }
+  
+  .project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: box-shadow 0.3s;
+}
+
+.project img:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#projects {
+  background-color: #f5f5f5; /* Modification */
+}
+
+.projects-container {
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+.project h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
