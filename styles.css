@@ -345,84 +345,37 @@ h1 {
     }
   }
   
-  .skill {
+  .skills-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .skill {
+    flex: 0 0 calc(33.3333% - 1rem);
     margin-bottom: 1rem;
   }
   
-  .skill-name {
-    font-weight: bold;
-  }
-  
-  .progress-bar {
-    background-color: #e0e0e0;
-    width: 70%;
-    height: 1.5rem;
-    position: relative;
-  }
-  
-  .progress {
-    background-color: #4caf50;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .percentage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .skills-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  .skills-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-  }
-  
-  .skills-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-  
-  .skill {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .skill-name {
-    font-weight: bold;
+  .skill h3 {
+    font-size: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 1.5rem; /* Augmente la taille du texte des compétences */
   }
   
   .progress-bar {
     background-color: #f3f3f3;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    height: 20px;
+    height: 10px;
     width: 100%;
   }
   
   .progress {
-    background-color: #00b0f0;
-    border-radius: 5px;
+    background-color: #3498db;
     height: 100%;
+    border-radius: 5px;
   }
   
-
   .custom-carousel-bg {
     background-color: #333 !important;
   }
