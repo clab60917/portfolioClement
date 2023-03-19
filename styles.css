@@ -356,9 +356,9 @@ h1 {
   .skill {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 1rem;
   }
+  
   
   .skill h3 {
     font-size: 1rem;
@@ -366,18 +366,19 @@ h1 {
   }
   
   .progress-bar {
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-    height: 10px; /* Hauteur réduite pour des barres plus fines */
-    width: 100%;
+    background-color: #e0e0e0; /* Changement de couleur pour un gris plus foncé */
+    height: 10px;
+    flex-grow: 1;
+    border-radius: 5px; /* Ajout de bordures arrondies pour un aspect plus esthétique */
   }
+  
   
   
   .progress {
     background-color: #00b0f0;
     border-radius: 5px;
     height: 100%;
+    
   }
   
   .custom-carousel-bg {
@@ -420,7 +421,8 @@ h1 {
 
 .skill-name {
   font-weight: bold;
-  margin-right: 1rem;
+  width: 150px; /* Largeur fixe pour les noms des compétences */
+  text-align: left;
 }
 .subcategories {
   display: grid;
@@ -432,13 +434,14 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 30%; /* Pour avoir une largeur fixe pour chaque colonne */
-  text-align: justify; /* Justifie le texte des compétences */
 }
+
 .subcategory h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
 .soft-skills .progress-bar,
 .soft-skills .progress {
   display: none;
