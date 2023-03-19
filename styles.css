@@ -316,7 +316,8 @@ h1 {
  
   .carrousel {
     overflow: hidden;
-    
+    margin-top: 2rem; /* Ajustez cette valeur pour modifier la marge supérieure du carrousel */
+    margin-bottom: 2rem;
     position: relative;
     width: 100%;
     height: 100px;
@@ -421,9 +422,7 @@ h1 {
     height: 100%;
   }
   
-  .carousel {
-    background-color: #333; /* Modifiez cette valeur pour changer la couleur de fond */
-  }
+
   .custom-carousel-bg {
     background-color: #333 !important;
   }
