@@ -446,3 +446,51 @@ h1 {
 .soft-skills .progress {
   display: none;
 }
+.soft-skill .skill-name {
+  text-align: center;
+  margin-left: 95px; /* Ajustez cette valeur pour décaler les compétences en soft skills vers la droite */
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  float: left;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background-color: #00b0f0;
+}
+
+.timeline-content {
+  padding: 
