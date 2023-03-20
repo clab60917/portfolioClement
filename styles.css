@@ -650,3 +650,10 @@ h1 {
     width: 100%;
   }
 }
+
+
+.project-logo {
+  width: 50px;
+  height: auto;
+  margin: 10px;
+}
