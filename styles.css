@@ -576,3 +576,44 @@ h1 {
   width: calc(50% - 10px);
   height: 420px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  padding: 50px 0;
+  background-color: #f1f1f1;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.contact-info p {
+  margin: 0 0 10px;
+}
