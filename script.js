@@ -12,3 +12,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Ajoutez ici d'autres fonctionnalités JavaScript pour améliorer l'expérience utilisateur
 });
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.style.opacity = 0;
+      setTimeout(() => {
+        loader.style.display = "none";
+      }, 1000); // Temps de la transition d'opacité
+    }, 3000); // Durée de l'écran de chargement
+  });
+  
