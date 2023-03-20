@@ -455,42 +455,90 @@ h1 {
   max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
+  margin-bottom: 4rem;
 }
 
-.timeline::before {
+.timeline::after {
   content: "";
   position: absolute;
+  width: 6px;
+  background-color: #f1f1f1;
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 2px;
-  background-color: #e0e0e0;
+  margin-left: -3px;
 }
 
-.timeline-item {
+.container {
+  padding: 10px 40px;
   position: relative;
+  background-color: inherit;
   width: 50%;
 }
 
-.timeline-item:nth-child(even) .timeline-content {
-  float: right;
-}
-
-.timeline-item:nth-child(odd) .timeline-content {
-  float: left;
-}
-
-.timeline-icon {
+.container::after {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border: 4px solid #f1f1f1;
+  top: 15px;
   border-radius: 50%;
-  background-color: #00b0f0;
+  z-index: 1;
 }
 
-.timeline-content {
-  padding: 
+.left {
+  left: 0;
+}
+
+.left::after {
+  left: -12px;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: calc(50% - 12px);
+}
+
+.left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent transparent transparent white;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* Augmente l'espace entre les cases */
+.content + .content {
+  margin-top: 40px;
+}
