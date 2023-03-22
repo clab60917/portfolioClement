@@ -80,6 +80,202 @@ nav a:hover::after {
     z-index: -1;
 }
 
+/* Importez une police personnalisée (facultatif) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  background-color: #333;
+  padding: 50px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.about-content {
+  flex: 2;
+  padding-left: 50px;
+}
+
+.about-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.experience, .interests {
+  margin-bottom: 20px;
+}
+
+.experience h3, .interests h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.experience-item p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.interests-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.interest-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.interest-item i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.interest-item p {
+  font-size: 16px;
+}
+
+.about-contact {
+  margin-bottom: 20px;
+}
+
+.about-contact h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.email-link {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+.social-icons a:hover {
+  color: #777;
+}
+
+/* Media query pour les petits écrans */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-content {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main {
     padding-top: 100px;
 }
