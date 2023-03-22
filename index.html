@@ -293,6 +293,16 @@
               </div>
           </div>
       </section>
+
+      <form id="xss-form">
+        <p>Merci d'avoir pris le temps de tout lire, voici maintenant un mini-jeu histoire de voir si vous maîtrisez les failles XSS !</p>
+        <label for="comment">Essayez de trouver la faille XSS :</label>
+        <input type="text" id="comment" name="comment" />
+        <button type="submit">Envoyer</button>
+      </form>
+      
+      <div id="response"></div>
+      
       
         
     </main>
